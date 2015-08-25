@@ -9,7 +9,7 @@ import play.api.data.Forms._
 object Application extends Controller {
 
   case class Place(id: Int, name: String)
-
+  case class ShortUrl(id: Int, name: String, longUrl: String)
 
   implicit val placesWrites = Json.writes[Place]
 
